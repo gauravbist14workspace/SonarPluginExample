@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.nec</groupId>
+  <!-- it's recommended to follow the pattern "sonar-{key}-plugin", for example "sonar-php-plugin" -->
+  <artifactId>varvel-c-plugin</artifactId>
+  <version>1.0</version>
+  
+  <!-- this is important for sonar-packaging-maven-plugin -->
+  <packaging>sonar-plugin</packaging>
+ 
+  <properties>
+	  <maven.compiler.version>3.5.2</maven.compiler.version>
+	  <jdk.source.version>1.8</jdk.source.version>
+	  <jdk.target.version>1.8</jdk.target.version>
+  </properties>
+  <dependencies>
+    <dependency>
+      <groupId>org.sonarsource.sonarqube</groupId>
+      <artifactId>sonar-plugin-api</artifactId>
+      <!-- minimal version of SonarQube to support. Note that the groupId was "org.codehaus.sonar" before version 5.2 -->
+      <version>5.6</version>
+      <!-- mandatory scope -->
+      <scope>provided</scope>
+    </dependency>
+  </dependencies>
+ 
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.sonarsource.sonar-packaging-maven-plugin</groupId>
+        <artifactId>sonar-packaging-maven-plugin</artifactId>
+        <version>1.17</version>
+        <extensions>true</extensions>
+        <configuration>
+		  <source>${jdk.source.version}</source>
+		  <target>${jdk.target.version}</target>
+          <!-- the entry-point class that extends org.sonar.api.SonarPlugin -->
+          <pluginClass>com.nec.MyPlugin</pluginClass>
+           
+          <!-- advanced properties can be set here. See paragraph "Advanced Build Properties". -->
+		  <pluginKey>TestPlugin</pluginKey>
+		  <pluginName>Sonar Test plugin</pluginName>
+		  <pluginDescription>Gathers and displays information from IDE metadata files, 
+		  including project type (based on natures/facets) and dependencies.</pluginDescription>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>
