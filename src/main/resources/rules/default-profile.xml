@@ -1,0 +1,17 @@
+Cppcheck-error_S
+Cppcheck-error_A
+RC-SizeofWithPointer_S
+RC-CastDiffTypeVal_B
+RC-VoidArgument_1_A
+M02-1_A
+N07-1_A
+U04-1_A
+RC-Unreachable_A
+RC-UseBreak_1_A
+RC-UseBreak_2_A
+RC-UseBreak_3_A
+RC-FillInitialData_1_A
+RC-SizeofWithPointer_A
+RC-SizeofWithPointer_B
+RC-CastDiffTypeVal_A
+RC-NoAssgnConditionalExp_1_S

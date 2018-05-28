@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<varvel-rules>
+	<rule>
+		<key>Cppcheck-error_S</key>
+		<name>Cppcheck-error (Rank S)</name>
+		<internalKey>Cppcheck-error_S</internalKey>
+		<description>S rank issues of Cppcheck-error
+		</description>
+		<severity>BLOCKER</severity>
+		<cardinality>SINGLE</cardinality>
+		<status>READY</status>
+		<type>BUG</type>
+		<tag>example</tag>
+		<remediationFunction>CONSTANT_ISSUE</remediationFunction>
+		<remediationFunctionBaseEffort>2min</remediationFunctionBaseEffort>
+	</rule>
+	<rule>
+		<key>Cppcheck-error_A</key>
+		<name>Cppcheck-error (Rank A)</name>
+		<internalKey>Cppcheck-error_A</internalKey>
+		<description>A rank issues of Cppcheck-error
+		</description>
+		<severity>CRITICAL</severity>
+		<cardinality>SINGLE</cardinality>
+		<status>READY</status>
+		<type>BUG</type>
+		<tag>example</tag>
+		<remediationFunction>CONSTANT_ISSUE</remediationFunction>
+		<remediationFunctionBaseEffort>2min</remediationFunctionBaseEffort>
+	</rule>
+	<rule>
+		<key>RC-SizeofWithPointer_S</key>
+		<name>RC-SizeofWithPointer (Rank S)</name>
+		<internalKey>RC-SizeofWithPointer_S</internalKey>
+		<description>S rank issues of RC-SizeofWithPointer</description>
+		<severity>BLOCKER</severity>
+		<cardinality>SINGLE</cardinality>
+		<status>READY</status>
+		<type>BUG</type>
+		<tag>example</tag>
+		<remediationFunction>CONSTANT_ISSUE</remediationFunction>
+		<remediationFunctionBaseEffort>2min</remediationFunctionBaseEffort>
+	</rule>
+	<rule>
+		<key>RC-CastDiffTypeVal_B</key>
+		<name>RC-CastDiffTypeVal_B</name>
+		<internalKey>RC-CastDiffTypeVal_B</internalKey>
+		<description>RC-CastDiffTypeVal_B</description>
+		<severity>MINOR</severity>
+		<cardinality>SINGLE</cardinality>
+		<status>READY</status>
+		<type>CODE_SMELL</type>
+		<tag>example</tag>
+		<remediationFunction>CONSTANT_ISSUE</remediationFunction>
+		<remediationFunctionBaseEffort>2min</remediationFunctionBaseEffort>
+	</rule>
+	<rule>
+		<key>RC-VoidArgument_1_A</key>
+		<name>RC-VoidArgument_1_A</name>
+		<internalKey>RC-VoidArgument_1_A</internalKey>
+		<description>RC-VoidArgument_1_A</description>
+		<severity>MINOR</severity>
+		<cardinality>SINGLE</cardinality>
+		<status>READY</status>
+		<type>CODE_SMELL</type>
+		<tag>example</tag>
+		<remediationFunction>CONSTANT_ISSUE</remediationFunction>
+		<remediationFunctionBaseEffort>2min</remediationFunctionBaseEffort>
+	</rule>
+	
+	<rule>
+		<key>M02-1_A</key>
+		<name>M02-1 (Ranked A)</name>
+		<internalKey>M02-1_A</internalKey>
+		<description>Memory leak due to lost reference stored in variable(s)</description>
+		<severity>MINOR</severity>
+		<cardinality>SINGLE</cardinality>
+		<status>READY</status>
+		<type>CODE_SMELL</type>
+		<tag>test</tag>
+		<remediationFunction>CONSTANT_ISSUE</remediationFunction>
+		<remediationFunctionBaseEffort>2min</remediationFunctionBaseEffort>
+	</rule>
+	
+	<rule>
+		<key>U04-1_A</key>
+		<name>U04-1 (Ranked A)</name>
+		<internalKey>U04-1_A</internalKey>
+		<description>Uninitialized variable use at standard function</description>
+		<severity>MINOR</severity>
+		<cardinality>SINGLE</cardinality>
+		<status>READY</status>
+		<type>BUG</type>
+		<tag>test</tag>
+		<remediationFunction>CONSTANT_ISSUE</remediationFunction>
+		<remediationFunctionBaseEffort>2min</remediationFunctionBaseEffort>
+	</rule>
+	
+	<rule>
+		<key>N07-1_A</key>
+		<name>N07-1 (Ranked A)</name>
+		<internalKey>N07-1_A</internalKey>
+		<description>Usage of uninitialized pointer is not allowed</description>
+		<severity>MINOR</severity>
+		<cardinality>SINGLE</cardinality>
+		<status>READY</status>
+		<type>CODE_SMELL</type>
+		<tag>test</tag>
+		<remediationFunction>CONSTANT_ISSUE</remediationFunction>
+		<remediationFunctionBaseEffort>2min</remediationFunctionBaseEffort>
+	</rule>
+	
+	<rule>
+		<key>RC-Unreachable_A</key>
+		<name>RC-Unreachable (Ranked A)</name>
+		<internalKey>RC-Unreachable_A</internalKey>
+		<description>Unreachable code detected.</description>
+		<severity>MINOR</severity>
+		<cardinality>SINGLE</cardinality>
+		<status>READY</status>
+		<type>CODE_SMELL</type>
+		<tag>test</tag>
+		<remediationFunction>CONSTANT_ISSUE</remediationFunction>
+		<remediationFunctionBaseEffort>2min</remediationFunctionBaseEffort>
+	</rule>
+	
+	<rule>
+		<key>RC-UseBreak_1_A</key>
+		<name>RC-UseBreak 1 (Ranked A)</name>
+		<internalKey>RC-UseBreak_1_A</internalKey>
+		<description>Non-empty case clause should always be terminated with break.</description>
+		<severity>MINOR</severity>
+		<cardinality>SINGLE</cardinality>
+		<status>READY</status>
+		<type>CODE_SMELL</type>
+		<tag>test</tag>
+		<remediationFunction>CONSTANT_ISSUE</remediationFunction>
+		<remediationFunctionBaseEffort>2min</remediationFunctionBaseEffort>
+	</rule>
+	<rule>
+		<key>RC-UseBreak_2_A</key>
+		<name>RC-UseBreak 2 (Ranked A)</name>
+		<internalKey>RC-UseBreak_2_A</internalKey>
+		<description>Case clause should not be terminated with a return.</description>
+		<severity>MINOR</severity>
+		<cardinality>SINGLE</cardinality>
+		<status>READY</status>
+		<type>CODE_SMELL</type>
+		<tag>test</tag>
+		<remediationFunction>CONSTANT_ISSUE</remediationFunction>
+		<remediationFunctionBaseEffort>2min</remediationFunctionBaseEffort>
+	</rule>
+	<rule>
+		<key>RC-UseBreak_3_A</key>
+		<name>RC-UseBreak 3 (Ranked A)</name>
+		<internalKey>RC-UseBreak_3_A</internalKey>
+		<description>Case clause should not be terminated with continue.</description>
+		<severity>MINOR</severity>
+		<cardinality>SINGLE</cardinality>
+		<status>READY</status>
+		<type>CODE_SMELL</type>
+		<tag>test</tag>
+		<remediationFunction>CONSTANT_ISSUE</remediationFunction>
+		<remediationFunctionBaseEffort>2min</remediationFunctionBaseEffort>
+	</rule>
+	
+	<rule>
+		<key>RC-FillInitialData_1_A</key>
+		<name>RC-FillInitialData 1(Ranked A)</name>
+		<internalKey>RC-FillInitialData_1_A</internalKey>
+		<description>Partial initialization should not be done.</description>
+		<severity>MINOR</severity>
+		<cardinality>SINGLE</cardinality>
+		<status>READY</status>
+		<type>CODE_SMELL</type>
+		<tag>test</tag>
+		<remediationFunction>CONSTANT_ISSUE</remediationFunction>
+		<remediationFunctionBaseEffort>2min</remediationFunctionBaseEffort>
+	</rule>
+	
+	<rule>
+		<key>RC-SizeofWithPointer_A</key>
+		<name>RC-SizeofWithPointer (Ranked A)</name>
+		<internalKey>RC-SizeofWithPointer_A</internalKey>
+		<description>sizeof operator with pointer is detected. array_type (possibly to compute array size).</description>
+		<severity>MINOR</severity>
+		<cardinality>SINGLE</cardinality>
+		<status>READY</status>
+		<type>CODE_SMELL</type>
+		<tag>test</tag>
+		<remediationFunction>CONSTANT_ISSUE</remediationFunction>
+		<remediationFunctionBaseEffort>2min</remediationFunctionBaseEffort>
+	</rule>
+	<rule>
+		<key>RC-SizeofWithPointer_B</key>
+		<name>RC-SizeofWithPointer (Ranked B)</name>
+		<internalKey>RC-SizeofWithPointer_B</internalKey>
+		<description>sizeof operator with pointer is detected (possibly to compute array size).</description>
+		<severity>MINOR</severity>
+		<cardinality>SINGLE</cardinality>
+		<status>READY</status>
+		<type>CODE_SMELL</type>
+		<tag>test</tag>
+		<remediationFunction>CONSTANT_ISSUE</remediationFunction>
+		<remediationFunctionBaseEffort>2min</remediationFunctionBaseEffort>
+	</rule>
+	
+	<rule>
+		<key>RC-CastDiffTypeVal_A</key>
+		<name>RC-CastDiffTypeVal (Ranked A)</name>
+		<internalKey>RC-CastDiffTypeVal_A</internalKey>
+		<description>Cast from unsigned long long to long should be avoided. Leads to bit truncation.</description>
+		<severity>MINOR</severity>
+		<cardinality>SINGLE</cardinality>
+		<status>READY</status>
+		<type>CODE_SMELL</type>
+		<tag>test</tag>
+		<remediationFunction>CONSTANT_ISSUE</remediationFunction>
+		<remediationFunctionBaseEffort>2min</remediationFunctionBaseEffort>
+	</rule>
+	
+	<rule>
+		<key>RC-NoAssgnConditionalExp_1_S</key>
+		<name>RC-NoAssgnConditionalExp 1 (Ranked S)</name>
+		<internalKey>RC-NoAssgnConditionalExp_1_S</internalKey>
+		<description>Usage of = where == may have been intended with a constant should be avoided.</description>
+		<severity>MAJOR</severity>
+		<cardinality>SINGLE</cardinality>
+		<status>READY</status>
+		<type>BUG</type>
+		<tag>test</tag>
+		<remediationFunction>CONSTANT_ISSUE</remediationFunction>
+		<remediationFunctionBaseEffort>2min</remediationFunctionBaseEffort>
+	</rule>
+</varvel-rules>
